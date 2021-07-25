@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-
-nav{
-  @apply w-full flex h-48;
-}
-@tailwind utilities;
