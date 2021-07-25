@@ -26,6 +26,7 @@ body{
         background-color: $primary;
         a{
             flex-grow: 0.33;
+            background-color: transparent;
         }
         ul{
             flex-grow: 0.5;
@@ -35,4 +36,9 @@ body{
              align-items: center;
         }
     }
+}
+a{
+    text-decoration: none;
+    color: #161616;
+    background-color: rgba($secondary, $alpha: 0.5);
 }

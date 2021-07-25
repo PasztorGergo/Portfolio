@@ -21,6 +21,7 @@ body nav {
 }
 body nav a {
   flex-grow: 0.33;
+  background-color: transparent;
 }
 body nav ul {
   flex-grow: 0.5;
@@ -28,6 +29,12 @@ body nav ul {
   list-style: none;
   justify-content: space-around;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #161616;
+  background-color: rgba(255, 225, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
