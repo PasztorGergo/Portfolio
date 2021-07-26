@@ -13,6 +13,17 @@ body {
   height: 100%;
   align-items: center;
 }
+body .load {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #ffe100;
+}
 body nav {
   display: flex;
   justify-content: space-around;
@@ -21,6 +32,11 @@ body nav {
   height: clamp(10vh, 15vh, 200px);
   background-color: #2cb9ef;
   padding: 0 32px;
+}
+body nav.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 body nav a {
   background-color: transparent;
@@ -87,6 +103,11 @@ body header .welcome .porthre {
   width: 45vh;
   height: 45vh;
 }
+body main #svg-bg {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   color: #161616;

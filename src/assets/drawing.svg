@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Gergő Pásztor | Portfolio</title>
-    <script defer src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    <!-- <div class="load">
-        <i class="fas fa-sync"></i>
-    </div> -->
-    <nav>
-        <a href="#home" class="name">Gergő Pásztor</a>
-        <ul class="nav-links">
-            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
-            <li><a href=""><i class="fas fa-code"></i>Works</a></li>
-            <li><a href=""><i class="fas fa-user"></i>About</a></li>
-            <li><a href=""><i class="fas fa-phone"></i>Contact</a></li>
-            <li class="theme-switch"><i class="fas fa-sun"></i></li>
-        </ul>
-    </nav>
-    <header id="home">
-        <div class="welcome">
-            <p>
-                Greetings!<br>
-                My name is
-                <span class="name">Gergő Pásztor.</span><br>
-                A <span id="role"></span><br>
-                Who will ameliorate the Web for You!
-            </p>
-            <div class="porthre"></div>
-        </div>
-    </header>
-    <main>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -48,7 +10,7 @@
    height="3431.1624"
    viewBox="0 0 508.42451 907.8284"
    version="1.1"
-   id="svg-bg">
+   id="svg8">
   <defs
      id="defs2">
     <linearGradient
@@ -165,7 +127,3 @@
        d="M 25.525403,616.25239 467.1542,584.24855 c 21.25125,-1.54003 40.85708,-29.41729 40.85708,-29.41729 l 0.42522,275.16663 c 0.0218,14.13441 -11.41284,27.5595 -25.5134,28.53721 L 42.764288,889.05513 C 3.2211007,891.797 0.01200231,916.862 0.01200231,916.862 V 641.76578 c 0,-14.13442 11.41594469,-24.49178 25.51340069,-25.51339 z" />
   </g>
 </svg>
-    </main>
-    <footer></footer>
-</body>
-</html>
