@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsc ./src/app.ts -out app.js -w && sass ./src/stlye.scss ./src/stlye.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PasztorGergo/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PasztorGergo/Portfolio/issues"
+  },
+  "homepage": "https://github.com/PasztorGergo/Portfolio#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
