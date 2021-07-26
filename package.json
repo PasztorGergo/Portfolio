@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "tsc ./src/app.ts -out app.js -w && sass ./src/stlye.scss ./src/stlye.css"
+    "dev": "tsc --build tsconfig.json && tsc ./src/app.ts --outDir ./ -out app.js -w",
+    "style": "sass ./src/style.scss ./src/style.css",
+    "gitCommit": "git add --all && git commit"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/PasztorGergo/Portfolio#readme",
   "devDependencies": {
+    "sass": "^1.36.0",
     "typescript": "^4.3.5"
   }
 }

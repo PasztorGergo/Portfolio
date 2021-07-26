@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e7f249e71a563eed9c495835657eb9c2?family=Poetsen+One');
 $primary-light: #73ebff;
 $primary: #2cb9ef;
 $primary-dark: #0089bc;
@@ -27,6 +29,7 @@ body{
         a{
             flex-grow: 0.33;
             background-color: transparent;
+            font-family: Poppins, 'Monserat';
         }
         ul{
             flex-grow: 0.5;
