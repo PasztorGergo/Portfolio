@@ -26,10 +26,16 @@ body{
         width: 100%;
         height: clamp(10vh, 15vh, 200px);
         background-color: $primary;
+        padding: 0 32px;
         a{
-            flex-grow: 0.33;
             background-color: transparent;
-            font-family: Poppins, 'Monserat';
+
+            &.name{
+                color: #fff;
+                flex-grow: 0.33;
+                font-family: Poppins, 'Monserat';
+                font-size: 2rem;
+            }
         }
         ul{
             flex-grow: 0.5;
@@ -37,7 +43,62 @@ body{
             list-style: none;
             justify-content: space-around;
              align-items: center;
+
+            li{
+                text-align: center;
+                i{
+                    font-size: 2rem;
+                    &.fa-sun{
+                        color: $secondary-light;
+                    }
+                }
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    gap: 0.5em;
+                    font-family: Ubuntu, 'sans-serif';
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    &.active{
+                        color: #fff;
+                    }
+                }
+            }
         }
+    }
+    header{
+        font-family: Poppins, 'Monserat';
+        width: 100%;
+        padding: 20vh 20vw;
+
+        .welcome{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            border-radius: 100vw;
+            p{
+                padding: 2rem 3.5rem 2em 5rem;
+                font-size: 1.5rem;
+                width: 60%;
+                .name{
+                    font-family: 'Poetsen One';
+                }
+            }
+            background-image: linear-gradient(to right, $primary, $primary-dark);
+
+            .porthre{
+                background-color: $primary-light;
+                border-radius: 50%;
+                width: 45vh;
+                height: 45vh;
+            }
+        }
+    }
+    main{
+
     }
 }
 a{

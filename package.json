@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "tsc --build tsconfig.json && tsc ./src/app.ts --outDir ./ -out app.js -w",
-    "style": "sass ./src/style.scss ./src/style.css",
+    "style": "sass ./src/style.scss ./src/style.css -w",
     "gitCommit": "git add --all && git commit"
   },
   "repository": {

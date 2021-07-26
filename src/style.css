@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+@import url("https://db.onlinewebfonts.com/c/e7f249e71a563eed9c495835657eb9c2?family=Poetsen+One");
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +20,16 @@ body nav {
   width: 100%;
   height: clamp(10vh, 15vh, 200px);
   background-color: #2cb9ef;
+  padding: 0 32px;
 }
 body nav a {
-  flex-grow: 0.33;
   background-color: transparent;
+}
+body nav a.name {
+  color: #fff;
+  flex-grow: 0.33;
+  font-family: Poppins, "Monserat";
+  font-size: 2rem;
 }
 body nav ul {
   flex-grow: 0.5;
@@ -30,7 +38,55 @@ body nav ul {
   justify-content: space-around;
   align-items: center;
 }
-
+body nav ul li {
+  text-align: center;
+}
+body nav ul li i {
+  font-size: 2rem;
+}
+body nav ul li i.fa-sun {
+  color: #ffff54;
+}
+body nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5em;
+  font-family: Ubuntu, "sans-serif";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body nav ul li a.active {
+  color: #fff;
+}
+body header {
+  font-family: Poppins, "Monserat";
+  width: 100%;
+  padding: 20vh 20vw;
+}
+body header .welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 100vw;
+  background-image: linear-gradient(to right, #2cb9ef, #0089bc);
+}
+body header .welcome p {
+  padding: 2rem 3.5rem 2em 5rem;
+  font-size: 1.5rem;
+  width: 60%;
+}
+body header .welcome p .name {
+  font-family: "Poetsen One";
+}
+body header .welcome .porthre {
+  background-color: #73ebff;
+  border-radius: 50%;
+  width: 45vh;
+  height: 45vh;
+}
 a {
   text-decoration: none;
   color: #161616;
