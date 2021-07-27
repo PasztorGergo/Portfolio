@@ -1,89 +1,192 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Gergő Pásztor | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+</head>
+<body>
+    <!-- <div class="load">
+        <i class="fas fa-sync"></i>
+    </div> -->
+    <nav>
+        <a href="#home" class="name">Gergő Pásztor</a>
+        <ul class="nav-links">
+            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+            <li><a href=""><i class="fas fa-code"></i>Works</a></li>
+            <li><a href=""><i class="fas fa-user"></i>About</a></li>
+            <li><a href=""><i class="fas fa-phone"></i>Contact</a></li>
+            <li class="theme-switch"><i class="fas fa-sun"></i></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="welcome">
+            <p>
+                Greetings!<br>
+                My name is
+                <span class="name">Gergő Pásztor.</span><br>
+                A <span id="role"></span><br>
+                Who will ameliorate the Web for You!
+            </p>
+            <div class="porthre"></div>
+        </div>
+    </header>
+    <main>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1921.6045"
+   height="3431.1624"
+   viewBox="0 0 508.42451 907.8284"
+   version="1.1"
+   id="svg-bg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient921">
+      <stop
+         style="stop-color:#0089bd;stop-opacity:1"
+         offset="0"
+         id="stop917" />
+      <stop
+         style="stop-color:#005879;stop-opacity:1"
+         offset="1"
+         id="stop919" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient915">
+      <stop
+         style="stop-color:#74ebff;stop-opacity:1"
+         offset="0"
+         id="stop911" />
+      <stop
+         style="stop-color:#2cb9f0;stop-opacity:1"
+         offset="1"
+         id="stop913" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient909">
+      <stop
+         style="stop-color:#2cb9f0;stop-opacity:1"
+         offset="0"
+         id="stop905" />
+      <stop
+         style="stop-color:#0089bd;stop-opacity:1"
+         offset="1"
+         id="stop907" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient857">
+      <stop
+         style="stop-color:#2cb9f0;stop-opacity:1"
+         offset="0"
+         id="stop853" />
+      <stop
+         style="stop-color:#00658b;stop-opacity:1"
+         offset="1"
+         id="stop855" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient915"
+       id="linearGradient859"
+       x1="29.53343"
+       y1="82.812401"
+       x2="449.36252"
+       y2="325.20084"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,533.70238)" />
+    <linearGradient
+       xlink:href="#linearGradient921"
+       id="linearGradient887"
+       gradientUnits="userSpaceOnUse"
+       x1="29.53343"
+       y1="82.812401"
+       x2="449.36252"
+       y2="325.20084"
+       gradientTransform="translate(0,-12.095238)" />
+    <linearGradient
+       xlink:href="#linearGradient909"
+       id="linearGradient891"
+       gradientUnits="userSpaceOnUse"
+       x1="29.53343"
+       y1="82.812401"
+       x2="449.36252"
+       y2="325.20084"
+       gradientTransform="translate(0,260.04762)" />
+    <linearGradient
+       xlink:href="#linearGradient857"
+       id="linearGradient895"
+       gradientUnits="userSpaceOnUse"
+       x1="29.53343"
+       y1="82.812401"
+       x2="449.36252"
+       y2="325.20084"
+       gradientTransform="translate(0,533.70238)" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer2"
+     transform="translate(-0.01200181,-9.0336362)">
+    <path
+       id="path885"
+       style="fill:url(#linearGradient887);fill-opacity:1;stroke:#225500;stroke-width:0;stroke-linecap:square;stroke-opacity:0"
+       d="M 25.525403,70.454765 467.1542,38.450926 C 488.40545,36.910896 508.01128,9.0336378 508.01128,9.0336378 L 508.4365,284.20027 c 0.0218,14.13441 -11.41284,27.5595 -25.5134,28.53721 L 42.764288,343.25751 C 3.2211007,345.99938 0.01200231,371.06438 0.01200231,371.06438 V 95.968162 c 0,-14.13442 11.41594469,-24.491786 25.51340069,-25.513397 z" />
+    <path
+       id="path889"
+       style="fill:url(#linearGradient891);fill-opacity:1;stroke:#225500;stroke-width:0;stroke-linecap:square;stroke-opacity:0"
+       d="M 25.525403,342.59762 467.1542,310.59378 c 21.25125,-1.54003 40.85708,-29.41728 40.85708,-29.41728 l 0.42522,275.16663 c 0.0218,14.13441 -11.41284,27.5595 -25.5134,28.53721 L 42.764288,615.40037 C 3.2211007,618.14224 0.01200231,643.20724 0.01200231,643.20724 V 368.11102 c 0,-14.13442 11.41594469,-24.49179 25.51340069,-25.5134 z" />
+    <path
+       id="path893"
+       style="fill:url(#linearGradient895);fill-opacity:1;stroke:#225500;stroke-width:0;stroke-linecap:square;stroke-opacity:0"
+       d="M 25.525403,616.25239 467.1542,584.24855 c 21.25125,-1.54003 40.85708,-29.41729 40.85708,-29.41729 l 0.42522,275.16663 c 0.0218,14.13441 -11.41284,27.5595 -25.5134,28.53721 L 42.764288,889.05513 C 3.2211007,891.797 0.01200231,916.862 0.01200231,916.862 V 641.76578 c 0,-14.13442 11.41594469,-24.49178 25.51340069,-25.51339 z" />
+    <path
+       id="rect848"
+       style="fill:url(#linearGradient859);fill-opacity:1;stroke:#225500;stroke-width:0;stroke-linecap:square;stroke-opacity:0"
+       d="M 25.525403,616.25239 467.1542,584.24855 c 21.25125,-1.54003 40.85708,-29.41729 40.85708,-29.41729 l 0.42522,275.16663 c 0.0218,14.13441 -11.41284,27.5595 -25.5134,28.53721 L 42.764288,889.05513 C 3.2211007,891.797 0.01200231,916.862 0.01200231,916.862 V 641.76578 c 0,-14.13442 11.41594469,-24.49178 25.51340069,-25.51339 z" />
+  </g>
+</svg>
+    </main>
+    <footer>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.8.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.8.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    </footer>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBH3yiJmxhEIwetTLhtr57Chw5YgPche2I",
+    authDomain: "gergoportfolio.firebaseapp.com",
+    projectId: "gergoportfolio",
+    storageBucket: "gergoportfolio.appspot.com",
+    messagingSenderId: "971864009053",
+    appId: "1:971864009053:web:4550cd0744769e833ca0b4",
+    measurementId: "G-2S8BCLXDLN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="./app.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
