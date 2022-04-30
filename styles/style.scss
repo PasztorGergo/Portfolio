@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-kanit text-[#929292];
+}
+h2 {
+  @apply font-medium;
+  &:not(#copyright) {
+    @apply text-4xl bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+  }
+}
+header {
+  @apply fixed left-0 top-0 h-screen  w-1/4 flex flex-col px-4 text-center items-center py-8 gap-8 bg-zinc-100;
+  h2 {
+    background-color: rgb(244, 244, 245) !important;
+  }
+}
+main {
+  @apply w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
+}
+
+p {
+  @apply text-2xl font-light;
+}
+input,
+textarea {
+  @apply outline-none border-2 border-[#929292] rounded-2xl px-2 py-1;
+}
+section {
+  @apply w-full flex flex-col;
+  &#contacts {
+    @apply gap-6;
+  }
+}
+.section-divider {
+  @apply bg-[#929292] relative my-8 px-8;
+  div {
+    @apply overflow-x-hidden max-w-3xl;
+    hr {
+      @apply h-[1px] border-none bg-[#929292];
+    }
+  }
+}
+.button {
+  @apply bg-[#72AAFF] rounded-lg text-white px-6 py-2 text-2xl block mx-auto;
+}
+footer {
+  @apply absolute bottom-0 right-0 w-3/4 py-4 text-center;
+}

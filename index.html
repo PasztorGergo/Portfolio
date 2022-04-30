@@ -14,47 +14,85 @@
     <meta property="og:url" content="https://gergopaszotr.dev" />
     <meta
       property="og:image"
-      content="https://gergopaszotr.dev/gergoPasztor.jpeg"
+      content="https://gergopaszotr.dev/gergopasztor.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap"
+      rel="stylesheet"
     />
     <title>Vite App</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <img
+        src="./gergopasztor.png"
+        alt="Gergő Pásztor's picture"
+        class="w-60 h-60"
+      />
+      <div class="section-divider w-full">
+        <div>
+          <h2>Gergő Pásztor</h2>
+          <hr />
+        </div>
+      </div>
+      <p class="flex-grow">
+        Nowadays, solving a problem is immensly essential in our society.
+      </p>
+      <p class="flex-grow">
+        As a web developer I create solutions, and make ideas real.
+      </p>
+    </header>
     <main>
       <section id="side-projects">
-        <div class="line">
-          <h2>Side projects</h2>
+        <div class="section-divider">
+          <div>
+            <h2>Side Projects</h2>
+            <hr />
+          </div>
+        </div>
+        <div id="project-container">
+          <div class="card"></div>
         </div>
       </section>
       <section id="contacts">
-        <div class="line">
-          <h2>Contact</h2>
-          <p>Get in touch, by filling in the form!</p>
+        <div class="section-divider">
+          <div>
+            <h2>Contact</h2>
+            <hr />
+          </div>
         </div>
-        <form action="">
+        <p class="text-center">Get in touch, by filling in the form!</p>
+        <form action="" class="flex flex-wrap px-12 gap-8">
           <input
             type="text"
             id="name"
             placeholder="Name"
             aria-placeholder="Name"
+            class="flex-grow-[0.5]"
           /><input
             type="email"
             id="email"
             placeholder="E-mail"
             aria-placeholder="E-mail"
+            class="flex-grow-[0.5]"
           />
           <textarea
+            class="flex-grow w-full resize-none"
             placeholder="Message"
             aria-placeholder="Message"
             id="message"
             cols="30"
             rows="10"
           ></textarea>
+          <button type="submit" class="button">Send</button>
         </form>
       </section>
     </main>
     <footer>
-      <h2>Copyright ©️ Gergő Pásztor</h2>
+      <h2 id="copyright">Copyright ©️ Gergő Pásztor</h2>
     </footer>
   </body>
 </html>
