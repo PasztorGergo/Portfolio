@@ -2,25 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  @apply font-kanit text-[#929292];
+  @apply font-kanit text-[#929292] scroll-smooth;
 }
 
 h2 {
   @apply font-medium;
 }
 h2:not(#copyright) {
-  @apply text-3xl bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+  @apply bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+}
+section h2 {
+  @apply text-3xl;
+}
+header h2 {
+  @apply text-xl lg:text-3xl;
 }
 
 header {
-  @apply fixed left-0 top-0 h-screen  md:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
+  @apply md:fixed left-0 top-0 h-screen  md:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
 }
 header h2 {
   background-color: rgb(244, 244, 245) !important;
 }
 
 main {
-  @apply w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
+  @apply w-full md:w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
 }
 
 p {
@@ -29,7 +35,7 @@ p {
 
 input,
 textarea {
-  @apply outline-none border-2 border-[#929292] rounded-2xl px-2 py-1;
+  @apply outline-none border-2 border-[#929292] rounded-2xl px-2 py-1 w-full md:w-auto;
 }
 
 section {
@@ -50,7 +56,7 @@ section#contacts {
 }
 
 .button {
-  @apply bg-[#72AAFF] rounded-lg text-white px-6 py-2 text-2xl block mx-auto;
+  @apply bg-[#5c90dc] hover:bg-[#3f659f] transition-colors rounded-lg text-white px-6 py-2 text-2xl block mx-auto;
 }
 
 footer {
@@ -66,8 +72,8 @@ footer {
 .social .icon-container * {
   @apply absolute;
 }
-.social .icon-container .fa-circle {
-  @apply text-6xl;
+.social .icon-container .circle {
+  @apply w-16 h-16 rounded-full border-4 border-[#929292];
 }
 .social .icon-container:nth-child(2) {
   grid-row: 1/-1;
@@ -76,24 +82,28 @@ footer {
 .social .icon-container:last-child {
   grid-column: 3/-1;
 }
+.social .icon-container:last-child img {
+  @apply w-7 h-7;
+}
 .social .icon-container .fa-brands {
   @apply text-3xl;
 }
 
 #project-container {
-  @apply grid justify-center;
+  @apply grid justify-center grid-cols-3 grid-rows-2;
 }
 #project-container .card {
-  @apply relative flex justify-center items-center max-h-64 rounded-lg bg-slate-400;
-}
-#project-container .card img {
-  @apply object-none h-full;
+  @apply relative p-10 flex justify-center items-center max-h-64 rounded-lg bg-slate-400 overflow-hidden;
 }
 #project-container .card h3 {
-  @apply absolute opacity-0 transition-opacity;
+  @apply absolute transition-opacity;
 }
-#project-container .card:hover h3 {
-  @apply opacity-100;
+#project-container .card#codisplay {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  background-image: url("../gergopasztor.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,7 +30,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Vite App</title>
+    <script defer src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <title>Gergő Pásztor's Portfolio</title>
   </head>
   <body>
     <header>
@@ -45,14 +50,37 @@
           <hr />
         </div>
       </div>
-      <p class="flex-grow">
-        Nowadays, solving a problem is immensly essential in our society.
-      </p>
-      <p class="flex-grow">
-        As a web developer I create solutions, and make ideas real.
-      </p>
+      <div class="header-text flex flex-col items-center justify-around h-full">
+        <p>Nowadays, solving a problem is immensly essential in our society.</p>
+        <p>As a web developer I create solutions, and make ideas real.</p>
+      </div>
+      <div class="actions">
+        <a href="#contacts" class="button">Contact Me</a>
+      </div>
     </header>
     <main>
+      <section class="introduction">
+        <div class="section-divider">
+          <div>
+            <h2>Brief Introduction</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="leading-loose text-center">
+            Hi, I'm <span class="font-medium">Gergő</span> Pásztor, web
+            developer, and a high school student.
+          </p>
+          <p class="leading-loose text-center">
+            I gained experience in web development both on the front and the
+            back-end.
+          </p>
+          <p class="leading-loose text-center">
+            My goal is to <span class="font-medium">solve problems</span>, that
+            burdens our society, with the help of programming.
+          </p>
+        </div>
+      </section>
       <section id="side-projects">
         <div class="section-divider">
           <div>
@@ -61,9 +89,8 @@
           </div>
         </div>
         <div id="project-container">
-          <div class="card group">
-            <h3 class="group-hover:opacity-100">Test 1</h3>
-            <img src="gergopasztor.png" alt="test" />
+          <div class="group card" id="codisplay">
+            <h3 class="group-hover:opacity-100 opacity-0">Codisplay</h3>
           </div>
         </div>
       </section>
@@ -74,70 +101,50 @@
             <hr />
           </div>
         </div>
-        <p class="text-center">Get in touch, by filling in the form!</p>
-        <form action="" class="flex flex-wrap px-12 gap-8">
-          <input
-            type="text"
-            id="name"
-            placeholder="Name"
-            aria-placeholder="Name"
-            class="flex-grow md:flex-grow-[0.5]"
-          /><input
-            type="email"
-            id="email"
-            placeholder="E-mail"
-            aria-placeholder="E-mail"
-            class="flex-grow md:flex-grow-[0.5]"
-          />
-          <textarea
-            class="flex-grow w-full resize-none"
-            placeholder="Message"
-            aria-placeholder="Message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button type="submit" class="button">Send</button>
-        </form>
         <div class="social">
           <a
+            title="@G3rgoPasztor"
             target="_blank"
             href="https://twitter.com/G3rgoPasztor"
             class="icon-container"
           >
-            <i class="fa-regular fa-circle"></i
-            ><i class="fa-brands fa-twitter"></i>
+            <i class="circle"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
           <a
+            title="Me on Linked In"
             target="_blank"
             href="https://www.linkedin.com/in/gerg%C5%91-p%C3%A1sztor-a0aa41214/"
             class="icon-container"
           >
-            <i class="fa-regular fa-circle"></i>
+            <i class="circle"></i>
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
+            title="Github Profile"
             target="_blank"
-            href="https://www.facebook.com/profile.php?id=100069973440569"
+            href="https://github.com/PasztorGergo"
             class="icon-container"
           >
-            <i class="fa-regular fa-circle"></i>
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="circle"></i>
+            <i class="fa-brands fa-github"></i>
           </a>
           <a
+            title="Producthunt"
             target="_blank"
             href="https://www.producthunt.com/@pgergo"
             class="icon-container"
           >
-            <i class="fa-regular fa-circle"></i>
+            <i class="circle"></i>
             <i class="fa-brands fa-product-hunt"></i>
           </a>
           <a
+            title="Apply Me on Fiverr"
             target="_blank"
             href="https://www.fiverr.com/pasztorgergo"
             class="icon-container"
           >
-            <i class="fa-regular fa-circle"></i>
+            <i class="circle"></i>
             <img src="fiverr.svg" alt="fiverr" class="w-4 h-4" />
           </a>
         </div>
