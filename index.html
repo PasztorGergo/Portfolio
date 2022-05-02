@@ -23,6 +23,13 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Vite App</title>
   </head>
   <body>
@@ -54,7 +61,10 @@
           </div>
         </div>
         <div id="project-container">
-          <div class="card"></div>
+          <div class="card group">
+            <h3 class="group-hover:opacity-100">Test 1</h3>
+            <img src="gergopasztor.png" alt="test" />
+          </div>
         </div>
       </section>
       <section id="contacts">
@@ -71,13 +81,13 @@
             id="name"
             placeholder="Name"
             aria-placeholder="Name"
-            class="flex-grow-[0.5]"
+            class="flex-grow md:flex-grow-[0.5]"
           /><input
             type="email"
             id="email"
             placeholder="E-mail"
             aria-placeholder="E-mail"
-            class="flex-grow-[0.5]"
+            class="flex-grow md:flex-grow-[0.5]"
           />
           <textarea
             class="flex-grow w-full resize-none"
@@ -89,10 +99,52 @@
           ></textarea>
           <button type="submit" class="button">Send</button>
         </form>
+        <div class="social">
+          <a
+            target="_blank"
+            href="https://twitter.com/G3rgoPasztor"
+            class="icon-container"
+          >
+            <i class="fa-regular fa-circle"></i
+            ><i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/gerg%C5%91-p%C3%A1sztor-a0aa41214/"
+            class="icon-container"
+          >
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100069973440569"
+            class="icon-container"
+          >
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.producthunt.com/@pgergo"
+            class="icon-container"
+          >
+            <i class="fa-regular fa-circle"></i>
+            <i class="fa-brands fa-product-hunt"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.fiverr.com/pasztorgergo"
+            class="icon-container"
+          >
+            <i class="fa-regular fa-circle"></i>
+            <img src="fiverr.svg" alt="fiverr" class="w-4 h-4" />
+          </a>
+        </div>
       </section>
+      <footer>
+        <h2 id="copyright">Copyright ©️ Gergő Pásztor</h2>
+      </footer>
     </main>
-    <footer>
-      <h2 id="copyright">Copyright ©️ Gergő Pásztor</h2>
-    </footer>
   </body>
 </html>

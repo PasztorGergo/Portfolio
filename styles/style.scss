@@ -8,11 +8,11 @@
 h2 {
   @apply font-medium;
   &:not(#copyright) {
-    @apply text-4xl bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+    @apply text-3xl bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
   }
 }
 header {
-  @apply fixed left-0 top-0 h-screen  w-1/4 flex flex-col px-4 text-center items-center py-8 gap-8 bg-zinc-100;
+  @apply fixed left-0 top-0 h-screen  md:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
   h2 {
     background-color: rgb(244, 244, 245) !important;
   }
@@ -22,7 +22,7 @@ main {
 }
 
 p {
-  @apply text-2xl font-light;
+  @apply text-lg font-light;
 }
 input,
 textarea {
@@ -31,7 +31,7 @@ textarea {
 section {
   @apply w-full flex flex-col;
   &#contacts {
-    @apply gap-6;
+    @apply gap-6 mb-12;
   }
 }
 .section-divider {
@@ -47,5 +47,44 @@ section {
   @apply bg-[#72AAFF] rounded-lg text-white px-6 py-2 text-2xl block mx-auto;
 }
 footer {
-  @apply absolute bottom-0 right-0 w-3/4 py-4 text-center;
+  @apply bottom-0 w-3/4 py-4 text-center;
+}
+.social {
+  @apply relative h-64 w-full grid grid-cols-3 grid-rows-2 justify-center items-center;
+  .icon-container {
+    @apply relative flex justify-center items-center opacity-60 hover:opacity-100 transition-opacity duration-300;
+    * {
+      @apply absolute;
+    }
+    .fa-circle {
+      @apply text-6xl;
+    }
+    &:nth-child(2) {
+      grid-row: 1 / -1;
+      grid-column: 2 / 3;
+    }
+    &:last-child {
+      grid-column: 3 / -1;
+    }
+    .fa-brands {
+      @apply text-3xl;
+    }
+  }
+}
+#project-container {
+  @apply grid justify-center;
+  .card {
+    @apply relative flex justify-center items-center max-h-64 rounded-lg bg-slate-400;
+    img {
+      @apply object-none h-full;
+    }
+    h3 {
+      @apply absolute opacity-0 transition-opacity;
+    }
+    &:hover {
+      h3 {
+        @apply opacity-100;
+      }
+    }
+  }
 }
