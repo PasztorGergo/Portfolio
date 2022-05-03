@@ -8,7 +8,7 @@
 h2 {
   @apply font-medium;
   &:not(#copyright) {
-    @apply bg-white dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+    @apply bg-white text-transparent dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
   }
   section & {
     @apply text-3xl;
@@ -41,12 +41,9 @@ section {
   }
 }
 .section-divider {
-  @apply bg-[#929292] relative my-8 px-8;
-  div {
-    @apply overflow-x-hidden max-w-3xl;
-    hr {
-      @apply h-[1px] border-none bg-[#929292];
-    }
+  @apply bg-[#929292] relative my-8;
+  & > div {
+    @apply w-full h-0 flex justify-center;
   }
 }
 .button {
@@ -103,4 +100,7 @@ footer {
       background-size: cover;
     }
   }
+}
+.hr {
+  @apply w-0 h-[1px] self-center border-0 bg-[#929292];
 }
