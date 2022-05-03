@@ -18,13 +18,13 @@ h2 {
   }
 }
 header {
-  @apply md:fixed left-0 top-0 h-screen  md:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
+  @apply lg:fixed left-0 top-0 min-h-full lg:h-screen  lg:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
   h2 {
     background-color: rgb(244, 244, 245) !important;
   }
 }
 main {
-  @apply w-full md:w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
+  @apply w-full lg:w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
 }
 
 p {
