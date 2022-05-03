@@ -81,18 +81,26 @@ footer {
   }
 }
 #project-container {
-  @apply grid justify-center grid-cols-3 grid-rows-2;
+  @apply flex flex-col md:grid justify-center md:grid-cols-3 md:grid-rows-2;
   .card {
-    @apply relative p-10 flex justify-center items-center max-h-64 rounded-lg bg-slate-400 overflow-hidden;
-    h3 {
-      @apply absolute transition-opacity;
+    @apply bg-no-repeat relative transition-all p-10 flex flex-col justify-center items-center max-h-64 rounded-lg bg-slate-400 overflow-hidden;
+    .card-text {
+      @apply transition-opacity text-center text-white z-10 duration-500;
+    }
+    ::before {
+      @apply absolute opacity-0 z-[-1] transition-opacity top-0 left-0 w-full h-full content-[""] bg-black hover:brightness-50;
+    }
+    &:hover,
+    & > a:hover {
+      &::before {
+        @apply opacity-50;
+      }
     }
     &#codisplay {
       grid-row: 1 / 3;
       grid-column: 1 / 3;
-      background-image: url("../gergopasztor.png");
+      background-image: url("../codisplay-thumbnail.png");
       background-size: cover;
-      background-position: center;
     }
   }
 }
