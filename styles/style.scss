@@ -5,10 +5,13 @@
 * {
   @apply font-kanit text-[#929292] scroll-smooth;
 }
+.theme-toggler {
+  @apply fixed z-10 shadow shadow-black bottom-3 right-3 rounded-lg bg-zinc-800 text-white dark:bg-zinc-100 dark:text-zinc-800 p-4 text-3xl cursor-pointer;
+}
 h2 {
   @apply font-medium;
   &:not(#copyright) {
-    @apply bg-white text-transparent dark:bg-[#252525] mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
+    @apply bg-white text-transparent transition-colors duration-300 dark:bg-zinc-800 mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
   }
   section & {
     @apply text-3xl;
@@ -18,13 +21,13 @@ h2 {
   }
 }
 header {
-  @apply lg:fixed left-0 top-0 min-h-full lg:h-screen  lg:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100;
-  h2 {
-    background-color: rgb(244, 244, 245) !important;
+  @apply lg:fixed left-0 top-0 transition-colors duration-300 min-h-full lg:h-screen lg:w-1/4 flex flex-col px-4 text-center items-center py-8 gap-2 bg-zinc-100 dark:bg-zinc-900;
+  h3 {
+    @apply dark:bg-zinc-900 bg-zinc-100 text-transparent transition-colors duration-300 text-2xl mx-auto w-fit absolute text-center left-0 right-0 -bottom-4 whitespace-nowrap px-4;
   }
 }
 main {
-  @apply w-full lg:w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8;
+  @apply w-full transition-colors duration-300 lg:w-3/4 right-0 absolute flex flex-col items-center gap-4 px-8 dark:bg-zinc-800;
 }
 
 p {
